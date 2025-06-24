@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel - Portfolio</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./skills.css" />
+  <link rel="stylesheet" href="./contactus.css" />
+  <link rel="stylesheet" href="./education.css" />
+</head>
+<body>
+  <div>
+    <!-- nav bar -->
+    <div class="navbar-container">
+      <header class="header bg">
+        <a href="#" class="logo">Emmanuel.</a>
+        <nav class="navbar">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/skills.html">Skills & Education</a>
+          <a href="/portfolio.html" class="active">Portfolio</a>
+          <a href="/contact.html">Contact</a>
+          <button class="menu-button" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24" fill="currentColor" height="2.2em" width="2.2em">
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+            </svg>
+          </button>
+        </nav>
+      </header>
+
+      <input id="menu-checkbox" type="checkbox" hidden />
+
+      <header class="mobile-header">
+        <div class="mobile-header-cont" style="padding: 20px;">
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <div style="width: 100px; border-radius: 50%; margin-bottom: 10px;">
+                <img src="./assets/images/home3.png" class="img-border" alt="Me" style="width: 100%; border-radius: 50%;" />
+              </div>
+              <p class="h1" style="margin-bottom: 5px;">Emmanuel DUFITUMUKIZA</p>
+              <p class="h3">Full Stack Developer</p>
+            </div>
+
+            <div style="position: relative;">
+              <button class="close-menu-btn" onclick="toggleMenu()" style="font-weight: bold; color: #ededed;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="30px" height="30px">
+                  <g fill="#ededed">
+                    <g transform="scale(5.12,5.12)">
+                      <path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="mobile-links" style="position: relative;">
+            <div class="mobile-links-cont">
+              <a href="/">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/skills.html">Skills & Education</a>
+              <a href="/portfolio.html">Portfolio</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="position: absolute; bottom: 35px; padding: 20px 8%;">
+          <p class="paragraph-styled" style="margin-bottom: 15px;">Contact me via:</p>
+          <div id="social-section">
+            <!-- Insert social icons or component -->
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- end of navbar -->
+
+    <section class="portfolio-part">
+      <div class="portfolio education">
+        <h1>Portfolio</h1>
+        <div class="portfolio-content">
+          <div class="left-one left-skills">
+            <div class="front-end">
+              <div class="d-flex top-nav">
+                <div class="sub-text">
+                  <h3>Most recent projects</h3>
+                  <span>Web and mobile applications</span>
+                </div>
+              </div>
+
+              <div class="projects-grid">
+                <div class="card_service" onclick="window.open('https://kto-ncims-admin-frontend.vercel.app/')">
+                  <img src="./assets/kto.png" alt="KtoNcims" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">KtoNcims</h3>
+                      <span class="card-date">May 2023 - Oct 2023</span>
+                    </div>
+                    <p>
+                      I developed this Korean website used for managing Korean companies and organizations, recording their accomplishments submitted over several years.
+                    </p>
+                    <p><strong>Tech:</strong> React, Springboot, MYSQL</p>
+                  </div>
+                </div>
+
+                <div class="card_service" onclick="window.open('https://vipitransport.com')">
+                  <img src="./assets/vipitransport.jpg" alt="Vipi Transport" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">Vipi Transport</h3>
+                      <span class="card-date">May 2024 - Present</span>
+                    </div>
+                    <p>
+                      VIPI TRANSPORT Platform enables logistics between transporters and clients to do business based on their location and at competitive prices.
+                    </p>
+                    <p><strong>Tech:</strong> React-Native, Node.js, PostgreSQL, Socket.io</p>
+                  </div>
+                </div>
+
+                <div class="card_service" onclick="window.open('https://tekana-clients.pepc.rw:9443/')">
+                  <img src="./assets/tekana.png" alt="Tekana" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">Tekana</h3>
+                      <span class="card-date">Aug 2023 - Oct 2023</span>
+                    </div>
+                    <p>
+                      I worked on Rwanda National Police’s “Tekana” system, used by millions for various traffic services.
+                    </p>
+                    <p><strong>Tech:</strong> Next.js, Springboot, PostgreSQL</p>
+                  </div>
+                </div>
+
+                <div class="card_service" onclick="window.open('https://unp-client-lemon.vercel.app/')">
+                  <img src="./assets/apprabit.png" alt="UR News Post" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">UR News Post</h3>
+                      <span class="card-date">Oct 2020 - Present</span>
+                    </div>
+                    <p>
+                      Founder and CEO of 'UR News Post', aiming to revolutionize communication and education within the University of Rwanda.
+                    </p>
+                    <p><strong>Tech:</strong> React, Node.js, MongoDB, Socket.io</p>
+                  </div>
+                </div>
+
+                <div class="card_service" onclick="window.open('https://www.apprabbit.com/')">
+                  <img src="assets/apprabit.png" alt="AppRabbit" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">AppRabbit</h3>
+                      <span class="card-date">Mar 2023 - Jun 2023</span>
+                    </div>
+                    <p>
+                      I contributed to building this white-labeled app platform for business owners to create apps in minutes.
+                    </p>
+                    <p><strong>Tech:</strong> React, Nest.js, PostgreSQL</p>
+                  </div>
+                </div>
+
+                <div class="card_service" onclick="window.open('https://tinnaapp.com/')">
+                  <img src="assets/tinna.png" alt="Tinna" />
+                  <div class="card-body">
+                    <div class="card-header">
+                      <h3 class="card-title">Tinna</h3>
+                      <span class="card-date">Nov 2021 - Jun 2022</span>
+                    </div>
+                    <p>
+                      I developed apps for Tinna, helping multinational FMCG companies get insights on SMEs and customers in developing markets.
+                    </p>
+                    <p><strong>Tech:</strong> React, React Native, Node.js, MongoDB, Socket.io</p>
+                  </div>
+                </div>
+              </div><!-- .projects-grid -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const input = document.getElementById("menu-checkbox");
+      if (input) input.checked = !input.checked;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const yearSpan = document.getElementById('year-count');
+      if (yearSpan) {
+        const years = new Date().getFullYear() + 1 - 2020;
+        yearSpan.textContent = years;
+      }
+    });
+  </script>
+</body>
+</html>

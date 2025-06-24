@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Emmanuel</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./skills.css">
+  <link rel="stylesheet" href="./contactus.css">
+  <link rel="stylesheet" href="./education.css">
+</head>
+<body>
+  <div class="navbar-container">
+    <header class="header bg">
+      <a href="#" class="logo">Emmanuel.</a>
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/skills.html">Skills & Education</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a class="active" href="/contact.html">Contact</a>
+      </nav>
+    </header>
+  </div>
+
+  <section class="portfolio-part">
+    <div class="portfolio education sub-text-contact">
+      <h1>Contact me</h1>
+      <div class="portfolio-content">
+        <div class="left-one left-skills">
+          <div class="front-end">
+            <div class="d-flex top-nav">
+              <div class="sub-text">
+                <h3>Get in touch</h3>
+                <span>Fill out this form to send me message</span>
+              </div>
+            </div>
+
+            <form id="contactForm" class="contact-cont contact-conts" style="padding-top: 40px;">
+              <div class="left-one2 l-one">
+                <!-- Contact Info -->
+                <div class="first-c d-flex">
+                  <div class="icon-contact">
+                    <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+                      <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
+                      <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2z"/>
+                      <path d="M13.422 13.443a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 00.648-.291l1.86-2.171a1 1 0 00-.086-1.391l-4.064-3.696z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="semibolds">Call Me</h4>
+                    <span class="b-tex">+250791741745</span>
+                  </div>
+                </div>
+
+                <div class="first-c d-flex">
+                  <div class="icon-contact">
+                    <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+                      <path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 001.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"/>
+                      <path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="semibolds">Email</h4>
+                    <span class="b-tex contact-email" onclick="window.open('mailto:e.dufitumuk@alustudent.com')" style="cursor:pointer;">e.dufitumuk@alustudent.com</span>
+                  </div>
+                </div>
+
+                <div class="first-c d-flex">
+                  <div class="icon-contact">
+                    <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+                      <path d="M16 12 A4 4 0 0 1 12 16 A4 4 0 0 1 8 12 A4 4 0 0 1 16 12 z"/>
+                      <path d="M13 4.069V2h-2v2.069A8.01 8.01 0 004.069 11H2v2h2.069A8.008 8.008 0 0011 19.931V22h2v-2.069A8.007 8.007 0 0019.931 13H22v-2h-2.069A8.008 8.008 0 0013 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="semibolds">Location</h4>
+                    <span class="b-tex">Kigali-Rwanda</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Input Fields -->
+              <div class="right-one2">
+                <div class="form__div">
+                  <input id="username" type="text" class="form__input" placeholder=" " onkeyup="validate()" onblur="validate()" />
+                  <label id="usernamelabel" class="form__label">Your Name*</label>
+                </div>
+                <span id="usernameError" class="error-text"></span>
+
+                <div class="form__div">
+                  <input id="useremail" type="email" class="form__input" placeholder=" " onkeyup="validateEmail()" onblur="validateEmail()" />
+                  <label id="emaillabel" class="form__label">Your Email*</label>
+                </div>
+                <span id="emailError" class="error-text"></span>
+
+                <div class="form__div textarea-cont">
+                  <textarea onfocus="document.getElementById('messagelabel').style.display = 'none'" id="message" class="form__input" placeholder="Message" onkeyup="validateMessage()" onblur="validateMessage()"></textarea>
+                  <label id="messagelabel" class="form__label">Message*</label>
+                </div>
+                
+                <span id="messageError" class="error-text"></span>
+
+                <button type="submit" class="download-btn btn sendbtn" style="height: 50px;">Send Message</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const toast = (message, type = "success") => alert(`${type.toUpperCase()}: ${message}`);
+
+    function validate() {
+      const usernameEl = document.getElementById("username");
+      const errorEl = document.getElementById("usernameError");
+      const label = document.getElementById("usernamelabel");
+      const name = usernameEl.value.trim();
+      if (!name) {
+        errorEl.textContent = "Your name is required*";
+        errorEl.style.display = "block";
+        label.style.color = "orangered";
+        usernameEl.style.borderColor = "orangered";
+        return false;
+      }
+      if (name.length < 2) {
+        errorEl.textContent = "Your name must be at least 2 characters*";
+        errorEl.style.display = "block";
+        label.style.color = "orangered";
+        usernameEl.style.borderColor = "orangered";
+        return false;
+      }
+      errorEl.textContent = "";
+      errorEl.style.display = "none";
+      label.style.color = "forestgreen";
+      usernameEl.style.borderColor = "forestgreen";
+      return true;
+    }
+
+    function validateEmail() {
+      const emailEl = document.getElementById("useremail");
+      const errorEl = document.getElementById("emailError");
+      const label = document.getElementById("emaillabel");
+      const email = emailEl.value.trim();
+      const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (!email) {
+        errorEl.textContent = "Email is required*";
+        errorEl.style.display = "block";
+        label.style.color = "orangered";
+        emailEl.style.borderColor = "orangered";
+        return false;
+      }
+      if (!regex.test(email)) {
+        errorEl.textContent = "Invalid Email address format";
+        errorEl.style.display = "block";
+        label.style.color = "orangered";
+        emailEl.style.borderColor = "orangered";
+        return false;
+      }
+      errorEl.textContent = "";
+      errorEl.style.display = "none";
+      label.style.color = "forestgreen";
+      emailEl.style.borderColor = "forestgreen";
+      return true;
+    }
+
+    function validateMessage() {
+      const msgEl = document.getElementById("message");
+      const errorEl = document.getElementById("messageError");
+      const label = document.getElementById("messagelabel");
+      const msg = msgEl.value.trim();
+      if (!msg) {
+        errorEl.textContent = "Message is required*";
+        errorEl.style.display = "block";
+        label.style.color = "orangered";
+        msgEl.style.borderColor = "orangered";
+        return false;
+      }
+      errorEl.textContent = "";
+      errorEl.style.display = "none";
+      label.style.color = "forestgreen";
+      msgEl.style.borderColor = "forestgreen";
+      return true;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const isValid = validate() & validateEmail() & validateMessage();
+      if (!isValid) return;
+
+      const username = document.getElementById("username").value.trim();
+      const email = document.getElementById("useremail").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      try {
+        // const res = await fetch("https://your-backend.com/messages", {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/json" },
+        //   body: JSON.stringify({ username, email, message }),
+        // });
+        // const data = await res.json();
+        // if (res.ok) {
+          toast("Message sent successfully");
+          form.reset();
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
+        // } else {
+        //   toast(data.message || "Something went wrong", "error");
+        // }
+      } catch (err) {
+        console.log(err)
+        // toast("Network error", "error");
+      }
+    });
+  </script>
+</body>
+</html>
